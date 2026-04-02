@@ -1,0 +1,10 @@
+.logo {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: #fff;
+}
+.logoAccent {
+    font-weight: 700;
+}
