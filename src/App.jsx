@@ -3,7 +3,7 @@ import Layout from "./components/Layout/Layout";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import RestrictedRoute from "./components/RestrictedRoute/RestrictedRoute";
 
-import HomePage from "./pages/HomePage/HomePage";
+import HomePage from "./pages/HomePage/HomePage.jsx";
 import NewsPage from "./pages/NewsPage/NewsPage.jsx";
 import NoticesPage from "./pages/NoticesPage/Noticespage.jsx";
 import FriendsPage from "./pages/FriendsPage/FriendsPage.jsx";
