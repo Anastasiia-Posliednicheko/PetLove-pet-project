@@ -11,7 +11,7 @@ export default function BurgerMenu({
   variant = "default",
 }) {
   const isHome = variant === "home";
-  if (!isOpen) return null;
+
   useEffect(() => {
     if (!isOpen) return;
 

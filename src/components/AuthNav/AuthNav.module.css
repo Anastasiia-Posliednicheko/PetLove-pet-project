@@ -1,7 +1,55 @@
 .authNav {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
+}
+.authLinkLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    width: 178px;
+    height: 42px;
+    
+    background: #f6b83d;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+.authLinkLogin:hover,
+.authLinkLogin:focus {
+    background: #fff4df;
+}
+
+.authLinkRegister {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    width: 178px;
+    height: 42px;
+    
+    background: #fff4df;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #f6b83d;
+
+}
+.authLinkRegister:hover,
+.authLinkRegister:focus {
+    background: #fbe7c1;
 }

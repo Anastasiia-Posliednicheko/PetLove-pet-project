@@ -20,51 +20,68 @@
 }
 
 .menuHome {
-  background-color: #f6b83d;
-}
-
-.menuDefault {
   background-color: #ffffff;
 }
 
+.menuDefault {
+  background-color: #f6b83d;
+}
+
 .menuHome .closeBtn {
-  color: #ffffff;
+  color: #262626;
 }
 
 .menuDefault .closeBtn {
-  color: #262626;
+  color: #ffffff;
 }
 
 .menuHome :global(.navLink) {
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #262626;
+  border: 1px solid rgba(38, 38, 38, 0.15);
+  border-radius: 30px;
+  width: 119px;
+  height: 48px;
+
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.03em; 
 }
 
+.menuHome :global(.navLink:hover),
+.menuHome :global(.navLink:focus),
 .menuHome :global(.navLinkActive) {
-  border-color: #ffffff;
+  border: 1px solid #f6b83d;
 }
 
 .menuDefault :global(.navLink) {
-  color: #262626;
-  border-color: rgba(38, 38, 38, 0.15);
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    width: 119px;
+    height: 48px;
+  
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
 }
 
+.menuDefault :global(.navLink:hover),
+.menuDefault :global(.navLink:focus),
 .menuDefault :global(.navLinkActive) {
-  border-color: #f6b83d;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.menu :global(.nav) {
-  flex-direction: column;
-}
 
-.menu :global(.authNav) {
-  flex-direction: column;
-  width: 100%;
-}
-
-.menu :global(.authLink) {
-  width: 100%;
-}
 
 .closeBtn {
   position: absolute;

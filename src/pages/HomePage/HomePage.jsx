@@ -7,8 +7,6 @@ function HomePage() {
     <section className={css.home}>
       <Container>
         <div className={css.hero}>
-          <Header variant="home" />
-
           <div className={css.content}>
             <h1 className={css.title}>
               Take good <span className={css.accent}>care</span> of your small

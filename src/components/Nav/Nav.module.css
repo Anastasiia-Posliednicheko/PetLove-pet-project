@@ -1,7 +1,8 @@
 .nav {
  display: flex;
- align-items: flex-start;
+ align-items: center;
  justify-content: flex-start;
- flex-direction: row;
+ flex-direction: column;
  gap: 10px;
+ padding-top: 236px;
 }
