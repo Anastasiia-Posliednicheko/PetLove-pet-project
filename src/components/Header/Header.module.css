@@ -1,15 +1,22 @@
 .header {
     width: 100%;
+}
+.headerDefault {
     background-color: #ffffff;
     border-bottom: 1px solid #e7e7e7;
 }
 
+.headerHome {
+    background-color: transparent;
+    border-bottom: none;
+}
 .headerInner {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
-    min-height: 60px;
+    min-height: 40px;
+    width: 100%;
 }
 
 .blokNav {
@@ -21,15 +28,15 @@
     align-items: center;
     justify-content: center;
 
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
 
     border: none;
     background-color: transparent;
+    color: #ffffff;
 
     font-size: 26px;
     line-height: 1;
-    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

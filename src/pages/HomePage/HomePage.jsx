@@ -7,6 +7,7 @@ function HomePage() {
     <section className={css.home}>
       <Container>
         <div className={css.hero}>
+          <Header variant="home" />
           <div className={css.content}>
             <h1 className={css.title}>
               Take good <span className={css.accent}>care</span> of your small
@@ -19,14 +20,24 @@ function HomePage() {
             </p>
           </div>
         </div>
-
-        <div className={css.imageWrapper}>
-          <img
-            className={css.image}
-            src="/images/home-pet.jpg"
-            alt="Girl with dog"
+        <picture className={css.imageWrapper}>
+          <source media="(min-width: 1440px)" srcset=" " />
+          <source
+            media="(min-width: 768px)"
+            srcSet="/images/home-tab.jpg 1x,
+                      /images/home-tab@2x.jpg 2x"
           />
-        </div>
+          <source
+            media="(max-width: 767px)"
+            srcSet="/images/home-mobile.jpg 1x,
+                      /images/home-mobile@2x.jpg 2x"
+          />
+          <img
+            src="/images/home-mobile.jpg"
+            alt="Girl with dog"
+            loading="lazy"
+          />
+        </picture>
       </Container>
     </section>
   );

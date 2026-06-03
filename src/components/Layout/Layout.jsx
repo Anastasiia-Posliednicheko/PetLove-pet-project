@@ -4,10 +4,10 @@ import Header from "../Header/Header";
 export default function Layout() {
   const location = useLocation();
 
-  const isHomePage = location.pathname === "/home" || location.pathname === "/";
+  const isHomePage = location.pathname === "/" || location.pathname === "/home";
   return (
     <>
-      <Header variant={isHomePage ? "home" : "default"} />
+      {!isHomePage && <Header />}
       <main>
         <Outlet />
       </main>

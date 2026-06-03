@@ -22,20 +22,22 @@ export default function Header({ variant = "default" }) {
   };
 
   return (
-    <header className={css.header}>
-      <Container>
-        <div className={css.headerInner}>
-          <Logo />
+    <header
+      className={`${css.header} ${
+        variant === "home" ? css.headerHome : css.headerDefault
+      }`}
+    >
+      <div className={css.headerInner}>
+        <Logo />
 
-          <div className={css.blokNav}>
-            <Nav />
-            {!isLoggedIn && <AuthNav />}
-          </div>
-          <button className={css.burgerBtn} type="button" onClick={openMenu}>
-            ☰
-          </button>
+        <div className={css.blokNav}>
+          <Nav />
+          {!isLoggedIn && <AuthNav />}
         </div>
-      </Container>
+        <button className={css.burgerBtn} type="button" onClick={openMenu}>
+          ☰
+        </button>
+      </div>
       <BurgerMenu
         isOpen={isMenuOpen}
         onClose={closeMenu}
