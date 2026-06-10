@@ -11,6 +11,7 @@ export default function Logo() {
         viewBox="0 0 14 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={css.icon}
       >
         <path
           fill-rule="evenodd"

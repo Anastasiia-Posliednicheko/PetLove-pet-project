@@ -55,16 +55,22 @@
 
 @media screen and (min-width: 1280px) {
     .headerInner {
-        min-height: 80px;
+        display: flex;
+        flex-direction: row;
+        min-height: 50px;
+        
     }
 
     .blokNav {
         display: flex;
-        align-items: center;
-        gap: 16px;
+        flex-direction: row;
+        gap: 110px;
+        
+
     }
 
     .burgerBtn {
         display: none;
     }
+    
 }

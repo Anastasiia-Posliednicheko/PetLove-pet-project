@@ -24,11 +24,10 @@
     text-transform: uppercase;
     color: #fff;
 
+    transition: background-color 250ms ease;
+
 }
-.authLinkLogin:hover,
-.authLinkLogin:focus {
-    background: #fff4df;
-}
+
 
 .authLinkRegister {
     display: flex;
@@ -52,4 +51,35 @@
 .authLinkRegister:hover,
 .authLinkRegister:focus {
     background: #fbe7c1;
+}
+.authLinkLogin:hover,
+.authLinkLogin:focus {
+    background: #f9b020;
+}
+
+.authLinkLoginActive {
+    color: #f6b83d;
+    background: #fff4df;
+}
+@media screen and (min-width: 1280px) {
+    .authNav {
+        flex-direction: row;
+    }
+    .authLinkLogin {
+        width: 119px;
+        height: 50px;
+
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        font-size: 16px;
+        line-height: 1.25;
+
+    }
+    .authLinkRegister {
+        width: 149px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 1.25;
+
+    }
+
 }

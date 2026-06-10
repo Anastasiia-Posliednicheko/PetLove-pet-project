@@ -21,7 +21,11 @@ function HomePage() {
           </div>
         </div>
         <picture className={css.imageWrapper}>
-          <source media="(min-width: 1440px)" srcset=" " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/images/home-desktop.jpg 1x,
+                      /images/home-desktop@2x.jpg 2x"
+          />
           <source
             media="(min-width: 768px)"
             srcSet="/images/home-tab.jpg 1x,

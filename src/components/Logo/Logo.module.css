@@ -8,3 +8,18 @@
 .logoAccent {
     font-weight: 700;
 }
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        font-weight: 800;
+        font-size: 28px;
+    }
+        .logoAccent {
+            font-weight: 800;
+            font-size: 28px;
+        }
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}

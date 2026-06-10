@@ -46,9 +46,11 @@
     .hero{
         border-radius: 60px;
         max-width: 704px;
+        padding: 16px 32px 44px;
+
     }
     .title {
-    
+        margin-top: 112px;
         font-size: 80px;
     }
     .text {
@@ -58,13 +60,32 @@
         line-height: 1.22222;
 
     }
-    .image {
-        border-radius: 60px;
-           
+    
+    .imageWrapper {
+         max-width: 704px;
+         border-radius: 60px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero {
+        max-width: 1216px;
+        padding: 16px 64px 32px;
+    }
+    .title {
+        font-size: 90px;
+        max-width: 760px;
+    
     }
     .imageWrapper {
-             max-width: 704px;
-             
-             border-radius: 60px;
+        max-width: 1216px;
+        border-radius: 60px;
     }
+    .text {
+        margin-top:  auto ;
+    }
+    .content{
+        display: flex;
+    }
+
 }

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import css from "./Nav.module.css";
 
 const buildLinkClass = ({ isActive }) =>
-  isActive ? "navLink navLinkActive" : "navLink";
+  `${css.navLink} ${isActive ? css.navLinkActive : ""}`;
 
 export default function Nav() {
   return (
