@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: 'https://petlove.b.goit.study/api',
+    baseURL: import.meta.env.VITE_API_URL,
 });
 
 export const setAuthHeader = token => {
@@ -10,4 +10,19 @@ export const setAuthHeader = token => {
 
 export const clearAuthHeader = () => {
     delete api.defaults.headers.common.Authorization;
+};
+
+export const fetchNews = async ({
+    keyword = "",
+    page = 1,
+    limit = 6,
+}) => {
+    const { data } = await api.get("/news", {
+        params: {
+            keyword,
+            page,
+            limit,
+        },
+    });
+    return data;
 };

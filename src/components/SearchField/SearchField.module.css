@@ -1,0 +1,52 @@
+.form {
+    position: relative;
+    width: 100%;
+    max-width: 335px;
+}
+
+.input {
+    width: 100%;
+    height: 42px;
+    padding: 12px 72px 12px 14px;
+
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+
+    font-size: 14px;
+    color: #262626;
+    outline: none;
+}
+
+.clearBtn,
+.searchBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 28px;
+    height: 28px;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.clearBtn {
+    right: 40px;
+}
+
+.searchBtn {
+    right: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+        max-width: 230px;
+    }
+
+    .input {
+        height: 48px;
+        font-size: 16px;
+    }
+}
